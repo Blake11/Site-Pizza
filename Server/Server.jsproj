@@ -1,0 +1,478 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|AnyCPU">
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|AnyCPU">
+      <Configuration>Release</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+      <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+      <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+      <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>b8780485-0a2c-48de-8c3e-53c927673ae5</ProjectGuid>
+    <TypeScriptToolsVersion>2.0</TypeScriptToolsVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0'">
+    <VisualStudioVersion>14.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).Default.props" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).props" />
+  <PropertyGroup>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion>10.0.14393.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.10586.0</TargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>$(VersionNumberMajor).$(VersionNumberMinor)</MinimumVisualStudioVersion>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <PackageCertificateKeyFile>Server_TemporaryKey.pfx</PackageCertificateKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="node_modules\accepts\HISTORY.md" />
+    <Content Include="node_modules\accepts\index.js" />
+    <Content Include="node_modules\accepts\LICENSE" />
+    <Content Include="node_modules\accepts\package.json" />
+    <Content Include="node_modules\accepts\README.md" />
+    <Content Include="node_modules\any-promise\.jshintrc" />
+    <Content Include="node_modules\any-promise\.npmignore" />
+    <Content Include="node_modules\any-promise\implementation.d.ts" />
+    <Content Include="node_modules\any-promise\implementation.js" />
+    <Content Include="node_modules\any-promise\index.d.ts" />
+    <Content Include="node_modules\any-promise\index.js" />
+    <Content Include="node_modules\any-promise\LICENSE" />
+    <Content Include="node_modules\any-promise\loader.js" />
+    <Content Include="node_modules\any-promise\optional.js" />
+    <Content Include="node_modules\any-promise\package.json" />
+    <Content Include="node_modules\any-promise\README.md" />
+    <Content Include="node_modules\any-promise\register-shim.js" />
+    <Content Include="node_modules\any-promise\register.d.ts" />
+    <Content Include="node_modules\any-promise\register.js" />
+    <Content Include="node_modules\any-promise\register\bluebird.d.ts" />
+    <Content Include="node_modules\any-promise\register\bluebird.js" />
+    <Content Include="node_modules\any-promise\register\es6-promise.d.ts" />
+    <Content Include="node_modules\any-promise\register\es6-promise.js" />
+    <Content Include="node_modules\any-promise\register\lie.d.ts" />
+    <Content Include="node_modules\any-promise\register\lie.js" />
+    <Content Include="node_modules\any-promise\register\native-promise-only.d.ts" />
+    <Content Include="node_modules\any-promise\register\native-promise-only.js" />
+    <Content Include="node_modules\any-promise\register\pinkie.d.ts" />
+    <Content Include="node_modules\any-promise\register\pinkie.js" />
+    <Content Include="node_modules\any-promise\register\promise.d.ts" />
+    <Content Include="node_modules\any-promise\register\promise.js" />
+    <Content Include="node_modules\any-promise\register\q.d.ts" />
+    <Content Include="node_modules\any-promise\register\q.js" />
+    <Content Include="node_modules\any-promise\register\rsvp.d.ts" />
+    <Content Include="node_modules\any-promise\register\rsvp.js" />
+    <Content Include="node_modules\any-promise\register\vow.d.ts" />
+    <Content Include="node_modules\any-promise\register\vow.js" />
+    <Content Include="node_modules\any-promise\register\when.d.ts" />
+    <Content Include="node_modules\any-promise\register\when.js" />
+    <Content Include="node_modules\bytes\History.md" />
+    <Content Include="node_modules\bytes\index.js" />
+    <Content Include="node_modules\bytes\LICENSE" />
+    <Content Include="node_modules\bytes\package.json" />
+    <Content Include="node_modules\bytes\Readme.md" />
+    <Content Include="node_modules\co-body\History.md" />
+    <Content Include="node_modules\co-body\index.js" />
+    <Content Include="node_modules\co-body\lib\any.js" />
+    <Content Include="node_modules\co-body\lib\form.js" />
+    <Content Include="node_modules\co-body\lib\json.js" />
+    <Content Include="node_modules\co-body\lib\text.js" />
+    <Content Include="node_modules\co-body\package.json" />
+    <Content Include="node_modules\co-body\Readme.md" />
+    <Content Include="node_modules\composition\index.js" />
+    <Content Include="node_modules\composition\LICENSE" />
+    <Content Include="node_modules\composition\package.json" />
+    <Content Include="node_modules\composition\README.md" />
+    <Content Include="node_modules\content-disposition\HISTORY.md" />
+    <Content Include="node_modules\content-disposition\index.js" />
+    <Content Include="node_modules\content-disposition\LICENSE" />
+    <Content Include="node_modules\content-disposition\package.json" />
+    <Content Include="node_modules\content-disposition\README.md" />
+    <Content Include="node_modules\content-type\HISTORY.md" />
+    <Content Include="node_modules\content-type\index.js" />
+    <Content Include="node_modules\content-type\LICENSE" />
+    <Content Include="node_modules\content-type\package.json" />
+    <Content Include="node_modules\content-type\README.md" />
+    <Content Include="node_modules\cookies\History.md" />
+    <Content Include="node_modules\cookies\lib\cookies.js" />
+    <Content Include="node_modules\cookies\LICENSE" />
+    <Content Include="node_modules\cookies\package.json" />
+    <Content Include="node_modules\cookies\README.md" />
+    <Content Include="node_modules\co\History.md" />
+    <Content Include="node_modules\co\index.js" />
+    <Content Include="node_modules\co\LICENSE" />
+    <Content Include="node_modules\co\package.json" />
+    <Content Include="node_modules\co\Readme.md" />
+    <Content Include="node_modules\debug\.jshintrc" />
+    <Content Include="node_modules\debug\.npmignore" />
+    <Content Include="node_modules\debug\bower.json" />
+    <Content Include="node_modules\debug\browser.js" />
+    <Content Include="node_modules\debug\CHANGELOG.md" />
+    <Content Include="node_modules\debug\component.json" />
+    <Content Include="node_modules\debug\debug.js" />
+    <Content Include="node_modules\debug\index.js" />
+    <Content Include="node_modules\debug\LICENSE" />
+    <Content Include="node_modules\debug\Makefile" />
+    <Content Include="node_modules\debug\node.js" />
+    <Content Include="node_modules\debug\package.json" />
+    <Content Include="node_modules\debug\Readme.md" />
+    <Content Include="node_modules\deep-equal\.travis.yml" />
+    <Content Include="node_modules\deep-equal\example\cmp.js" />
+    <Content Include="node_modules\deep-equal\index.js" />
+    <Content Include="node_modules\deep-equal\lib\is_arguments.js" />
+    <Content Include="node_modules\deep-equal\lib\keys.js" />
+    <Content Include="node_modules\deep-equal\LICENSE" />
+    <Content Include="node_modules\deep-equal\package.json" />
+    <Content Include="node_modules\deep-equal\readme.markdown" />
+    <Content Include="node_modules\deep-equal\test\cmp.js" />
+    <Content Include="node_modules\delegates\.npmignore" />
+    <Content Include="node_modules\delegates\History.md" />
+    <Content Include="node_modules\delegates\index.js" />
+    <Content Include="node_modules\delegates\License" />
+    <Content Include="node_modules\delegates\Makefile" />
+    <Content Include="node_modules\delegates\package.json" />
+    <Content Include="node_modules\delegates\Readme.md" />
+    <Content Include="node_modules\delegates\test\index.js" />
+    <Content Include="node_modules\depd\History.md" />
+    <Content Include="node_modules\depd\index.js" />
+    <Content Include="node_modules\depd\lib\browser\index.js" />
+    <Content Include="node_modules\depd\lib\compat\buffer-concat.js" />
+    <Content Include="node_modules\depd\lib\compat\callsite-tostring.js" />
+    <Content Include="node_modules\depd\lib\compat\event-listener-count.js" />
+    <Content Include="node_modules\depd\lib\compat\index.js" />
+    <Content Include="node_modules\depd\LICENSE" />
+    <Content Include="node_modules\depd\package.json" />
+    <Content Include="node_modules\depd\Readme.md" />
+    <Content Include="node_modules\destroy\index.js" />
+    <Content Include="node_modules\destroy\LICENSE" />
+    <Content Include="node_modules\destroy\package.json" />
+    <Content Include="node_modules\destroy\README.md" />
+    <Content Include="node_modules\ee-first\index.js" />
+    <Content Include="node_modules\ee-first\LICENSE" />
+    <Content Include="node_modules\ee-first\package.json" />
+    <Content Include="node_modules\ee-first\README.md" />
+    <Content Include="node_modules\error-inject\index.js" />
+    <Content Include="node_modules\error-inject\package.json" />
+    <Content Include="node_modules\error-inject\README.md" />
+    <Content Include="node_modules\escape-html\index.js" />
+    <Content Include="node_modules\escape-html\LICENSE" />
+    <Content Include="node_modules\escape-html\package.json" />
+    <Content Include="node_modules\escape-html\Readme.md" />
+    <Content Include="node_modules\extend\.npmignore" />
+    <Content Include="node_modules\extend\.travis.yml" />
+    <Content Include="node_modules\extend\component.json" />
+    <Content Include="node_modules\extend\index.js" />
+    <Content Include="node_modules\extend\LICENSE" />
+    <Content Include="node_modules\extend\package.json" />
+    <Content Include="node_modules\extend\README.md" />
+    <Content Include="node_modules\formidable\.npmignore" />
+    <Content Include="node_modules\formidable\.travis.yml" />
+    <Content Include="node_modules\formidable\index.js" />
+    <Content Include="node_modules\formidable\lib\file.js" />
+    <Content Include="node_modules\formidable\lib\incoming_form.js" />
+    <Content Include="node_modules\formidable\lib\index.js" />
+    <Content Include="node_modules\formidable\lib\json_parser.js" />
+    <Content Include="node_modules\formidable\lib\multipart_parser.js" />
+    <Content Include="node_modules\formidable\lib\octet_parser.js" />
+    <Content Include="node_modules\formidable\lib\querystring_parser.js" />
+    <Content Include="node_modules\formidable\LICENSE" />
+    <Content Include="node_modules\formidable\package.json" />
+    <Content Include="node_modules\formidable\Readme.md" />
+    <Content Include="node_modules\fresh\HISTORY.md" />
+    <Content Include="node_modules\fresh\index.js" />
+    <Content Include="node_modules\fresh\LICENSE" />
+    <Content Include="node_modules\fresh\package.json" />
+    <Content Include="node_modules\fresh\README.md" />
+    <Content Include="node_modules\http-assert\HISTORY.md" />
+    <Content Include="node_modules\http-assert\index.js" />
+    <Content Include="node_modules\http-assert\LICENSE" />
+    <Content Include="node_modules\http-assert\node_modules\http-errors\HISTORY.md" />
+    <Content Include="node_modules\http-assert\node_modules\http-errors\index.js" />
+    <Content Include="node_modules\http-assert\node_modules\http-errors\LICENSE" />
+    <Content Include="node_modules\http-assert\node_modules\http-errors\package.json" />
+    <Content Include="node_modules\http-assert\node_modules\http-errors\README.md" />
+    <Content Include="node_modules\http-assert\package.json" />
+    <Content Include="node_modules\http-assert\readme.md" />
+    <Content Include="node_modules\http-errors\HISTORY.md" />
+    <Content Include="node_modules\http-errors\index.js" />
+    <Content Include="node_modules\http-errors\LICENSE" />
+    <Content Include="node_modules\http-errors\node_modules\inherits\inherits.js" />
+    <Content Include="node_modules\http-errors\node_modules\inherits\inherits_browser.js" />
+    <Content Include="node_modules\http-errors\node_modules\inherits\LICENSE" />
+    <Content Include="node_modules\http-errors\node_modules\inherits\package.json" />
+    <Content Include="node_modules\http-errors\node_modules\inherits\README.md" />
+    <Content Include="node_modules\http-errors\package.json" />
+    <Content Include="node_modules\http-errors\README.md" />
+    <Content Include="node_modules\iconv-lite\.npmignore" />
+    <Content Include="node_modules\iconv-lite\.travis.yml" />
+    <Content Include="node_modules\iconv-lite\Changelog.md" />
+    <Content Include="node_modules\iconv-lite\encodings\dbcs-codec.js" />
+    <Content Include="node_modules\iconv-lite\encodings\dbcs-data.js" />
+    <Content Include="node_modules\iconv-lite\encodings\index.js" />
+    <Content Include="node_modules\iconv-lite\encodings\internal.js" />
+    <Content Include="node_modules\iconv-lite\encodings\sbcs-codec.js" />
+    <Content Include="node_modules\iconv-lite\encodings\sbcs-data-generated.js" />
+    <Content Include="node_modules\iconv-lite\encodings\sbcs-data.js" />
+    <Content Include="node_modules\iconv-lite\encodings\tables\big5-added.json" />
+    <Content Include="node_modules\iconv-lite\encodings\tables\cp936.json" />
+    <Content Include="node_modules\iconv-lite\encodings\tables\cp949.json" />
+    <Content Include="node_modules\iconv-lite\encodings\tables\cp950.json" />
+    <Content Include="node_modules\iconv-lite\encodings\tables\eucjp.json" />
+    <Content Include="node_modules\iconv-lite\encodings\tables\gb18030-ranges.json" />
+    <Content Include="node_modules\iconv-lite\encodings\tables\gbk-added.json" />
+    <Content Include="node_modules\iconv-lite\encodings\tables\shiftjis.json" />
+    <Content Include="node_modules\iconv-lite\encodings\utf16.js" />
+    <Content Include="node_modules\iconv-lite\encodings\utf7.js" />
+    <Content Include="node_modules\iconv-lite\lib\bom-handling.js" />
+    <Content Include="node_modules\iconv-lite\lib\extend-node.js" />
+    <Content Include="node_modules\iconv-lite\lib\index.js" />
+    <Content Include="node_modules\iconv-lite\lib\streams.js" />
+    <Content Include="node_modules\iconv-lite\LICENSE" />
+    <Content Include="node_modules\iconv-lite\package.json" />
+    <Content Include="node_modules\iconv-lite\README.md" />
+    <Content Include="node_modules\inflation\HISTORY.md" />
+    <Content Include="node_modules\inflation\index.js" />
+    <Content Include="node_modules\inflation\LICENSE" />
+    <Content Include="node_modules\inflation\package.json" />
+    <Content Include="node_modules\inflation\README.md" />
+    <Content Include="node_modules\inherits\inherits.js" />
+    <Content Include="node_modules\inherits\inherits_browser.js" />
+    <Content Include="node_modules\inherits\LICENSE" />
+    <Content Include="node_modules\inherits\package.json" />
+    <Content Include="node_modules\inherits\README.md" />
+    <Content Include="node_modules\inherits\test.js" />
+    <Content Include="node_modules\isarray\build\build.js" />
+    <Content Include="node_modules\isarray\component.json" />
+    <Content Include="node_modules\isarray\index.js" />
+    <Content Include="node_modules\isarray\package.json" />
+    <Content Include="node_modules\isarray\README.md" />
+    <Content Include="node_modules\keygrip\.npmignore" />
+    <Content Include="node_modules\keygrip\.travis.yml" />
+    <Content Include="node_modules\keygrip\index.js" />
+    <Content Include="node_modules\keygrip\LICENSE.txt" />
+    <Content Include="node_modules\keygrip\package.json" />
+    <Content Include="node_modules\keygrip\README.md" />
+    <Content Include="node_modules\keygrip\test.js" />
+    <Content Include="node_modules\koa-body\.npmignore" />
+    <Content Include="node_modules\koa-body\.travis.yml" />
+    <Content Include="node_modules\koa-body\index.js" />
+    <Content Include="node_modules\koa-body\LICENSE" />
+    <Content Include="node_modules\koa-body\package.json" />
+    <Content Include="node_modules\koa-body\README.md" />
+    <Content Include="node_modules\koa-compose\History.md" />
+    <Content Include="node_modules\koa-compose\index.js" />
+    <Content Include="node_modules\koa-compose\package.json" />
+    <Content Include="node_modules\koa-compose\Readme.md" />
+    <Content Include="node_modules\koa-is-json\.npmignore" />
+    <Content Include="node_modules\koa-is-json\index.js" />
+    <Content Include="node_modules\koa-is-json\LICENSE" />
+    <Content Include="node_modules\koa-is-json\package.json" />
+    <Content Include="node_modules\koa-is-json\README.md" />
+    <Content Include="node_modules\koa-router\history.md" />
+    <Content Include="node_modules\koa-router\lib\layer.js" />
+    <Content Include="node_modules\koa-router\lib\README_tpl.hbs" />
+    <Content Include="node_modules\koa-router\lib\router.js" />
+    <Content Include="node_modules\koa-router\LICENSE" />
+    <Content Include="node_modules\koa-router\package.json" />
+    <Content Include="node_modules\koa-router\README.md" />
+    <Content Include="node_modules\koa-send\History.md" />
+    <Content Include="node_modules\koa-send\index.js" />
+    <Content Include="node_modules\koa-send\package.json" />
+    <Content Include="node_modules\koa-send\Readme.md" />
+    <Content Include="node_modules\koa-static\History.md" />
+    <Content Include="node_modules\koa-static\index.js" />
+    <Content Include="node_modules\koa-static\package.json" />
+    <Content Include="node_modules\koa-static\Readme.md" />
+    <Content Include="node_modules\koa\History.md" />
+    <Content Include="node_modules\koa\lib\application.js" />
+    <Content Include="node_modules\koa\lib\context.js" />
+    <Content Include="node_modules\koa\lib\request.js" />
+    <Content Include="node_modules\koa\lib\response.js" />
+    <Content Include="node_modules\koa\LICENSE" />
+    <Content Include="node_modules\koa\package.json" />
+    <Content Include="node_modules\koa\Readme.md" />
+    <Content Include="node_modules\media-typer\HISTORY.md" />
+    <Content Include="node_modules\media-typer\index.js" />
+    <Content Include="node_modules\media-typer\LICENSE" />
+    <Content Include="node_modules\media-typer\package.json" />
+    <Content Include="node_modules\media-typer\README.md" />
+    <Content Include="node_modules\methods\HISTORY.md" />
+    <Content Include="node_modules\methods\index.js" />
+    <Content Include="node_modules\methods\LICENSE" />
+    <Content Include="node_modules\methods\package.json" />
+    <Content Include="node_modules\methods\README.md" />
+    <Content Include="node_modules\mime-db\db.json" />
+    <Content Include="node_modules\mime-db\HISTORY.md" />
+    <Content Include="node_modules\mime-db\index.js" />
+    <Content Include="node_modules\mime-db\LICENSE" />
+    <Content Include="node_modules\mime-db\package.json" />
+    <Content Include="node_modules\mime-db\README.md" />
+    <Content Include="node_modules\mime-types\HISTORY.md" />
+    <Content Include="node_modules\mime-types\index.js" />
+    <Content Include="node_modules\mime-types\LICENSE" />
+    <Content Include="node_modules\mime-types\package.json" />
+    <Content Include="node_modules\mime-types\README.md" />
+    <Content Include="node_modules\ms\index.js" />
+    <Content Include="node_modules\ms\LICENSE.md" />
+    <Content Include="node_modules\ms\package.json" />
+    <Content Include="node_modules\ms\README.md" />
+    <Content Include="node_modules\mz\child_process.js" />
+    <Content Include="node_modules\mz\crypto.js" />
+    <Content Include="node_modules\mz\dns.js" />
+    <Content Include="node_modules\mz\fs.js" />
+    <Content Include="node_modules\mz\HISTORY.md" />
+    <Content Include="node_modules\mz\index.js" />
+    <Content Include="node_modules\mz\LICENSE" />
+    <Content Include="node_modules\mz\package.json" />
+    <Content Include="node_modules\mz\readline.js" />
+    <Content Include="node_modules\mz\README.md" />
+    <Content Include="node_modules\mz\zlib.js" />
+    <Content Include="node_modules\negotiator\HISTORY.md" />
+    <Content Include="node_modules\negotiator\index.js" />
+    <Content Include="node_modules\negotiator\lib\charset.js" />
+    <Content Include="node_modules\negotiator\lib\encoding.js" />
+    <Content Include="node_modules\negotiator\lib\language.js" />
+    <Content Include="node_modules\negotiator\lib\mediaType.js" />
+    <Content Include="node_modules\negotiator\LICENSE" />
+    <Content Include="node_modules\negotiator\package.json" />
+    <Content Include="node_modules\negotiator\README.md" />
+    <Content Include="node_modules\object-assign\index.js" />
+    <Content Include="node_modules\object-assign\license" />
+    <Content Include="node_modules\object-assign\package.json" />
+    <Content Include="node_modules\object-assign\readme.md" />
+    <Content Include="node_modules\on-finished\HISTORY.md" />
+    <Content Include="node_modules\on-finished\index.js" />
+    <Content Include="node_modules\on-finished\LICENSE" />
+    <Content Include="node_modules\on-finished\package.json" />
+    <Content Include="node_modules\on-finished\README.md" />
+    <Content Include="node_modules\only\.npmignore" />
+    <Content Include="node_modules\only\History.md" />
+    <Content Include="node_modules\only\index.js" />
+    <Content Include="node_modules\only\Makefile" />
+    <Content Include="node_modules\only\package.json" />
+    <Content Include="node_modules\only\Readme.md" />
+    <Content Include="node_modules\parseurl\HISTORY.md" />
+    <Content Include="node_modules\parseurl\index.js" />
+    <Content Include="node_modules\parseurl\LICENSE" />
+    <Content Include="node_modules\parseurl\package.json" />
+    <Content Include="node_modules\parseurl\README.md" />
+    <Content Include="node_modules\path-is-absolute\index.js" />
+    <Content Include="node_modules\path-is-absolute\license" />
+    <Content Include="node_modules\path-is-absolute\package.json" />
+    <Content Include="node_modules\path-is-absolute\readme.md" />
+    <Content Include="node_modules\path-to-regexp\History.md" />
+    <Content Include="node_modules\path-to-regexp\index.d.ts" />
+    <Content Include="node_modules\path-to-regexp\index.js" />
+    <Content Include="node_modules\path-to-regexp\LICENSE" />
+    <Content Include="node_modules\path-to-regexp\package.json" />
+    <Content Include="node_modules\path-to-regexp\Readme.md" />
+    <Content Include="node_modules\qs\.eslintignore" />
+    <Content Include="node_modules\qs\.npmignore" />
+    <Content Include="node_modules\qs\.travis.yml" />
+    <Content Include="node_modules\qs\bower.json" />
+    <Content Include="node_modules\qs\CHANGELOG.md" />
+    <Content Include="node_modules\qs\CONTRIBUTING.md" />
+    <Content Include="node_modules\qs\lib\index.js" />
+    <Content Include="node_modules\qs\lib\parse.js" />
+    <Content Include="node_modules\qs\lib\stringify.js" />
+    <Content Include="node_modules\qs\lib\utils.js" />
+    <Content Include="node_modules\qs\LICENSE" />
+    <Content Include="node_modules\qs\package.json" />
+    <Content Include="node_modules\qs\README.md" />
+    <Content Include="node_modules\qs\test\parse.js" />
+    <Content Include="node_modules\qs\test\stringify.js" />
+    <Content Include="node_modules\qs\test\utils.js" />
+    <Content Include="node_modules\raw-body\HISTORY.md" />
+    <Content Include="node_modules\raw-body\index.js" />
+    <Content Include="node_modules\raw-body\LICENSE" />
+    <Content Include="node_modules\raw-body\package.json" />
+    <Content Include="node_modules\raw-body\README.md" />
+    <Content Include="node_modules\resolve-path\HISTORY.md" />
+    <Content Include="node_modules\resolve-path\index.js" />
+    <Content Include="node_modules\resolve-path\LICENSE" />
+    <Content Include="node_modules\resolve-path\package.json" />
+    <Content Include="node_modules\resolve-path\README.md" />
+    <Content Include="node_modules\setprototypeof\index.js" />
+    <Content Include="node_modules\setprototypeof\LICENSE" />
+    <Content Include="node_modules\setprototypeof\package.json" />
+    <Content Include="node_modules\setprototypeof\README.md" />
+    <Content Include="node_modules\statuses\codes.json" />
+    <Content Include="node_modules\statuses\HISTORY.md" />
+    <Content Include="node_modules\statuses\index.js" />
+    <Content Include="node_modules\statuses\LICENSE" />
+    <Content Include="node_modules\statuses\package.json" />
+    <Content Include="node_modules\statuses\README.md" />
+    <Content Include="node_modules\thenify-all\History.md" />
+    <Content Include="node_modules\thenify-all\index.js" />
+    <Content Include="node_modules\thenify-all\LICENSE" />
+    <Content Include="node_modules\thenify-all\package.json" />
+    <Content Include="node_modules\thenify-all\README.md" />
+    <Content Include="node_modules\thenify\index.js" />
+    <Content Include="node_modules\thenify\LICENSE" />
+    <Content Include="node_modules\thenify\package.json" />
+    <Content Include="node_modules\thenify\README.md" />
+    <Content Include="node_modules\type-is\HISTORY.md" />
+    <Content Include="node_modules\type-is\index.js" />
+    <Content Include="node_modules\type-is\LICENSE" />
+    <Content Include="node_modules\type-is\package.json" />
+    <Content Include="node_modules\type-is\README.md" />
+    <Content Include="node_modules\unpipe\HISTORY.md" />
+    <Content Include="node_modules\unpipe\index.js" />
+    <Content Include="node_modules\unpipe\LICENSE" />
+    <Content Include="node_modules\unpipe\package.json" />
+    <Content Include="node_modules\unpipe\README.md" />
+    <Content Include="node_modules\vary\HISTORY.md" />
+    <Content Include="node_modules\vary\index.js" />
+    <Content Include="node_modules\vary\LICENSE" />
+    <Content Include="node_modules\vary\package.json" />
+    <Content Include="node_modules\vary\README.md" />
+    <Content Include="server.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{4a0dddb5-7a95-4fbf-97cc-616d07737a77}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.jsproj.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.jsproj.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below then uncomment
+       that target and the DisableFastUpToDateCheck PropertyGroup. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <PropertyGroup>
+    <DisableFastUpToDateCheck>true</DisableFastUpToDateCheck>
+  </PropertyGroup>
+  -->
+</Project>

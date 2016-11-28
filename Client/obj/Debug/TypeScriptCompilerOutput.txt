@@ -1,0 +1,15 @@
+C:\Users\NoxErinys\Desktop\Site Pizzerie\Client\app
+C:\Users\NoxErinys\Desktop\Site Pizzerie\Client\app
+C:\Users\NoxErinys\Desktop\Site Pizzerie\Client\app.map
+C:\Users\NoxErinys\Desktop\Site Pizzerie\Client\app
+C:\Users\NoxErinys\Desktop\Site Pizzerie\Client\app.map
+C:\Users\NoxErinys\Desktop\Site Pizzerie\Client\app
+C:\Users\NoxErinys\Desktop\Site Pizzerie\Client\app.map
+C:\Users\NoxErinys\Desktop\Site Pizzerie\Client\app.js
+C:\Users\NoxErinys\Desktop\Site Pizzerie\Client\app.js.map
+C:\Users\NoxErinys\Desktop\Site Pizzerie\Client\app.js
+C:\Users\NoxErinys\Desktop\Site Pizzerie\Client\app.js.map
+C:\Users\NoxErinys\Desktop\Site Pizzerie\Client\app.js
+C:\Users\NoxErinys\Desktop\Site Pizzerie\Client\app.js.map
+C:\Users\NoxErinys\Desktop\Site Pizzerie\Client\app.js
+C:\Users\NoxErinys\Desktop\Site Pizzerie\Client\app.js.map
