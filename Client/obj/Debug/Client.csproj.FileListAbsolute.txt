@@ -4,3 +4,6 @@ C:\Users\NoxErinys\Desktop\Site Pizzerie\Client\bin\Client.pdb
 C:\Users\NoxErinys\Desktop\Site Pizzerie\Client\obj\Debug\Client.csprojResolveAssemblyReference.cache
 C:\Users\NoxErinys\Desktop\Site Pizzerie\Client\obj\Debug\Client.dll
 C:\Users\NoxErinys\Desktop\Site Pizzerie\Client\obj\Debug\Client.pdb
+C:\Users\Paul\Source\Repos\Site-Pizza\Client\obj\Debug\Client.csprojResolveAssemblyReference.cache
+C:\Users\Paul\Source\Repos\Site-Pizza\Client\obj\Debug\Client.dll
+C:\Users\Paul\Source\Repos\Site-Pizza\Client\obj\Debug\Client.pdb
